@@ -12,7 +12,7 @@ class Drop{
         this.y=y;
     }
     velocity(){
-        this.y=this.y+1
+        this.y=this.y+4;
         if(this.y>400){
             this.y=Math.round(random(-550,-50))
             this.x=Math.round(random(20,1180))
