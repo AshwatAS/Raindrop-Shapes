@@ -10,7 +10,7 @@ function setup() {
   rand=Math.round(random(20,380));
   rand2=Math.round(random(-550,-50));
   rand3=Math.round(random(10,80));
-  for (i=0;i<=400;i++){
+  for (i=0;i<=30;i++){
     drop[i]=new Drop(rand,rand2,rand3,rand3);
   }
 }
@@ -18,8 +18,8 @@ function setup() {
 function draw() {
   background(0);  
   Engine.update(engine);
-  for (i=1;i<=400;i++){
-    drop.velocityY=drop.velocityY+i
+  for (i=1;i<=30;i++){
+    drop[i].velocity()
     drop[i].display()
   }
   drawSprites();
